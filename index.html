@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
   <meta charset="UTF-8">
   <title>Glow Gifts Layout</title>
@@ -9,28 +10,36 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      padding-top: 180px;
+      padding-top: 270px;
     }
+
     header {
       background: #fff;
       padding: 10px 0;
       border-bottom: 1px solid #ddd;
     }
+
     .logo {
       font-size: 24px;
       font-weight: bold;
       color: #007bff;
     }
+
     .slogan {
       font-size: 14px;
       color: #555;
     }
+
     .hotline {
       font-weight: bold;
       color: #007bff;
     }
+
     nav {
       background: #007bff;
+    }
+    .nav-item{
+      margin-right: 10px;
     }
     nav .nav-link {
       color: white !important;
@@ -38,112 +47,162 @@
       padding: 10px 15px;
       transition: all 0.3s ease;
     }
+
+    /* small devices >=576px */
+    @media (min-width: 576px) {
+      nav .nav-link {
+      font-size: 14px;
+    }
+    }
+
+    /* medium devices >=768px */
+    @media (min-width: 768px) {
+      nav .nav-link {
+      font-size: 16px;
+    }
+    }
+
+    /* large devices >=992px */
+    @media (min-width: 992px) {
+      nav .nav-link {
+      font-size: 18px;
+    }
+    }
+
+    /* extra large >=1200px */
+    @media (min-width: 1200px) {
+      nav .nav-link {
+        font-size: 18px;
+      }
+    }
+
+    /* xxl >=1400px */
+    @media (min-width: 1400px) {
+      nav .nav-link {
+      font-size: 18px;
+    }
+    }
+
     nav .nav-link:hover {
       background: deepskyblue;
       border-radius: 6px;
       transform: scale(1.05);
     }
+
     .sidebar {
       border-right: 1px solid #ddd;
       padding: 15px;
     }
+
     .list-group-item {
       transition: all 0.3s ease;
       cursor: pointer;
     }
+
     .list-group-item:hover {
       background: #e3f2fd;
       color: #007bff;
       transform: translateX(5px);
     }
+
     .main-content {
       padding: 15px;
     }
+
     .card {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
     .card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
+
     footer {
       background: #f8f9fa;
       padding: 30px 0;
       margin-top: 30px;
       border-top: 1px solid #ddd;
     }
+
     footer h5 {
       color: #007bff;
       font-weight: bold;
       font-size: 16px;
     }
-    footer p, footer ul {
-      font-size: 14px;
+
+    footer p,
+    footer ul {
+      font-size: 18px;
       margin: 0;
       padding: 0;
       list-style: none;
     }
+
     footer ul li {
       margin-bottom: 5px;
     }
-    .pagination{
-        background-color: white;
+
+    .pagination {
+      background-color: white;
     }
   </style>
 </head>
+
 <body>
 
-<!-- Header + Navigation cố định -->
-<div class="fixed-top shadow-sm">
-  <!-- Header -->
-  <header class="bg-white border-bottom">
-    <div class="container d-flex justify-content-between align-items-center flex-wrap py-2">
-      <div>
-        <div class="logo d-flex align-items-center">
-          <img height="60" src="data/images/logo.png" alt="">
+  <!-- Header + Navigation cố định -->
+  <div class="fixed-top shadow-sm">
+    <!-- Header -->
+    <header class="bg-white border-bottom">
+      <div class="container d-flex justify-content-between align-items-center flex-wrap py-2">
+        <div>
+          <div class="logo d-flex align-items-center">
+            <img height="150" src="data/images/logo.png" alt="">
+          </div>
+          <div class="slogan">
+            <span style="color: #ff4081;">Quà tặng tinh tế</span> -
+            <span style="color: #007bff;">Sáng tạo doanh nghiệp</span>
+          </div>
         </div>
-        <div class="slogan">
-          <span style="color: #ff4081;">Quà tặng tinh tế</span> - 
-          <span style="color: #007bff;">Sáng tạo doanh nghiệp</span>
+        <div class="hotline mt-2 mt-md-0 fw-bold text-primary">
+          Hotline: 0909 xxx xxx
         </div>
       </div>
-      <div class="hotline mt-2 mt-md-0 fw-bold text-primary">
-        Hotline: 0909 xxx xxx
-      </div>
-    </div>
-  </header>
+    </header>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg bg-primary">
-    <div class="container">
-      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-        ☰
-      </button>
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active text-white" href="#">Trang chủ</a>
-          </li>
-          <li class="nav-item"><a class="nav-link text-white" href="#">Quà sinh nhật</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#">Quà giáng sinh</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#">Đồ trang trí</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#">Văn phòng phẩm</a></li>
-          <!-- Dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white" href="#" id="moreMenu" role="button" data-bs-toggle="dropdown">
-              Xem thêm
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Quà tết</a></li>
-              <li><a class="dropdown-item" href="#">Quà cưới</a></li>
-              <li><a class="dropdown-item" href="#">Đồ handmade</a></li>
-            </ul>
-          </li>
-        </ul>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-primary">
+      <div class="container">
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          ☰
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="display: flex; justify-content: center; width: 100%;">
+            <li class="nav-item">
+              <a class="nav-link active text-white" href="#">Trang chủ</a>
+            </li>
+            <li class="nav-item"><a class="nav-link text-white" href="#">Quà sinh nhật</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#">Quà giáng sinh</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#">Đồ trang trí</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#">Văn phòng phẩm</a></li>
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="moreMenu" role="button"
+                data-bs-toggle="dropdown">
+                Xem thêm
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Quà tết</a></li>
+                <li><a class="dropdown-item" href="#">Quà cưới</a></li>
+                <li><a class="dropdown-item" href="#">Đồ handmade</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-</div>
+    </nav>
+  </div>
 
 
 
@@ -152,32 +211,34 @@
     <div class="row">
       <!-- Sidebar -->
       <!-- Giới thiệu doanh nghiệp -->
-<div class="col-lg-4 col-md-5 mb-4">
-  <div class="p-3 border rounded bg-light h-100">
-    <h5 class="fw-bold mb-3">Giới thiệu <span style="color: #ff4081;">GLOW</span> <span style="color: #007bff;">GIFTS</span></h5>
-    <img src="https://via.placeholder.com/350x200" class="img-fluid rounded mb-3" alt="Giới thiệu công ty">
-    <p style="text-align: justify;">
-      <span style="color: #ff4081;">GLOW</span> <span style="color: #007bff;">GIFTS</span> là thương hiệu chuyên cung cấp <b>văn phòng phẩm</b> và 
-      <b>quà tặng doanh nghiệp</b> với mẫu mã đa dạng, thiết kế tinh tế và chất lượng đảm bảo. 
-      Chúng tôi hiểu rằng mỗi món quà không chỉ đơn thuần là vật phẩm, mà còn là cầu nối gắn kết, 
-      truyền tải thông điệp và giá trị thương hiệu của doanh nghiệp đến đối tác, khách hàng và nhân viên.
-    </p>
-    <p style="text-align: justify;">
-      Tại GLOW GIFTS, bạn sẽ tìm thấy những sản phẩm văn phòng phẩm tiện ích, quà tặng sang trọng 
-      và giải pháp quà tặng trọn gói, phù hợp với nhiều dịp khác nhau như hội nghị, sự kiện, 
-      tri ân khách hàng hay khen thưởng nội bộ.
-    </p>
-    <p style="text-align: justify;">
-      Với phương châm <span class="fw-bold text-danger">“Trao quà – Gửi gắm niềm tin”</span>, 
-      GLOW GIFTS cam kết mang đến cho khách hàng sự hài lòng từ chất lượng sản phẩm 
-      đến dịch vụ chuyên nghiệp, góp phần tạo nên những mối quan hệ bền vững và giá trị lâu dài.
-    </p>
-  </div>
-</div>
+      <div class="col-lg-3 col-md-4 mb-4">
+        <div class="p-3 border rounded bg-light">
+          <h5 class="fw-bold mb-3">Giới thiệu <span style="color: #ff4081;">GLOW</span> <span
+              style="color: #007bff;">GIFTS</span></h5>
+          <img src="https://via.placeholder.com/350x200" class="img-fluid rounded mb-3" alt="Giới thiệu công ty">
+          <p style="text-align: justify;">
+            <span style="color: #ff4081;">GLOW</span> <span style="color: #007bff;">GIFTS</span> là thương hiệu chuyên
+            cung cấp <b>văn phòng phẩm</b> và
+            <b>quà tặng doanh nghiệp</b> với mẫu mã đa dạng, thiết kế tinh tế và chất lượng đảm bảo.
+            Chúng tôi hiểu rằng mỗi món quà không chỉ đơn thuần là vật phẩm, mà còn là cầu nối gắn kết,
+            truyền tải thông điệp và giá trị thương hiệu của doanh nghiệp đến đối tác, khách hàng và nhân viên.
+          </p>
+          <p style="text-align: justify;">
+            Tại GLOW GIFTS, bạn sẽ tìm thấy những sản phẩm văn phòng phẩm tiện ích, quà tặng sang trọng
+            và giải pháp quà tặng trọn gói, phù hợp với nhiều dịp khác nhau như hội nghị, sự kiện,
+            tri ân khách hàng hay khen thưởng nội bộ.
+          </p>
+          <p style="text-align: justify;">
+            Với phương châm <span class="fw-bold text-danger">“Trao quà – Gửi gắm niềm tin”</span>,
+            GLOW GIFTS cam kết mang đến cho khách hàng sự hài lòng từ chất lượng sản phẩm
+            đến dịch vụ chuyên nghiệp, góp phần tạo nên những mối quan hệ bền vững và giá trị lâu dài.
+          </p>
+        </div>
+      </div>
 
 
       <!-- Main content -->
-      <div class="col-lg-8 col-md-7 main-content">
+      <div class="col-lg-9 col-md-8 main-content">
         <h5 style="font-weight: bold;">Tất cả sản phẩm</h5>
         <div class="row g-3 mt-2" id="productGrid">
           <!-- Sản phẩm sẽ render bằng JS -->
@@ -230,151 +291,152 @@
 
   <!-- JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  let categoriesMap = {};
-  let allProducts = [];
-  let filteredProducts = [];
-  let currentPage = 1;
-  const itemsPerPage = 9;
+  <script>
+    let categoriesMap = {};
+    let allProducts = [];
+    let filteredProducts = [];
+    let currentPage = 1;
+    const itemsPerPage = 9;
 
-  async function loadData() {
-    try {
-      // Load categories
-      const catRes = await fetch("data/jsons/categories.json");
-      const categories = await catRes.json();
-      categoriesMap = Object.fromEntries(categories.map(c => [c.id, c.name]));
-      renderNav(categories);
+    async function loadData() {
+      try {
+        // Load categories
+        const catRes = await fetch("data/jsons/categories.json");
+        const categories = await catRes.json();
+        categoriesMap = Object.fromEntries(categories.map(c => [c.id, c.name]));
+        renderNav(categories);
 
-      // Load products
-      const prodRes = await fetch("data/jsons/products.json");
-      allProducts = await prodRes.json();
-      filteredProducts = allProducts;
+        // Load products
+        const prodRes = await fetch("data/jsons/products.json");
+        allProducts = await prodRes.json();
+        filteredProducts = allProducts;
 
-      renderProducts();
-      renderPagination();
-    } catch (err) {
-      console.error("Lỗi load dữ liệu:", err);
+        renderProducts();
+        renderPagination();
+      } catch (err) {
+        console.error("Lỗi load dữ liệu:", err);
+      }
     }
-  }
 
-  function renderNav(categories) {
-    const nav = document.querySelector("#mainNav .navbar-nav");
-    nav.innerHTML = `
+    function renderNav(categories) {
+      const nav = document.querySelector("#mainNav .navbar-nav");
+      nav.innerHTML = `
       <li class="nav-item">
         <a class="nav-link active text-white" href="#" data-cat="all">Trang chủ</a>
       </li>
     `;
 
-    const doanhNghiep = categories.filter(c => c.name.toLowerCase().includes("doanh nghiệp"));
-    const others = categories.filter(c => !c.name.toLowerCase().includes("doanh nghiệp"));
+      const doanhNghiep = categories.filter(c => c.name.toLowerCase().includes("doanh nghiệp"));
+      const others = categories.filter(c => !c.name.toLowerCase().includes("doanh nghiệp"));
 
-    if (doanhNghiep.length > 0) {
-      const li = document.createElement("li");
-      li.className = "nav-item dropdown";
-      li.innerHTML = `
+      if (doanhNghiep.length > 0) {
+        const li = document.createElement("li");
+        li.className = "nav-item dropdown";
+        li.innerHTML = `
         <a class="nav-link dropdown-toggle text-white" href="#" id="doanhNghiepMenu" role="button" data-bs-toggle="dropdown">
           Quà tặng doanh nghiệp
         </a>
         <ul class="dropdown-menu"></ul>
       `;
-      const dropdown = li.querySelector(".dropdown-menu");
-      doanhNghiep.forEach(cat => {
-        const item = document.createElement("li");
-        item.innerHTML = `<a class="dropdown-item" href="#" data-cat="${cat.id}">${cat.name}</a>`;
-        dropdown.appendChild(item);
+        const dropdown = li.querySelector(".dropdown-menu");
+        doanhNghiep.forEach(cat => {
+          const item = document.createElement("li");
+          item.innerHTML = `<a class="dropdown-item" href="#" data-cat="${cat.id}">${cat.name}</a>`;
+          dropdown.appendChild(item);
+        });
+        nav.appendChild(li);
+      }
+
+      others.forEach(cat => {
+        const li = document.createElement("li");
+        li.className = "nav-item";
+        li.innerHTML = `<a class="nav-link text-white" href="#" data-cat="${cat.id}">${cat.name}</a>`;
+        nav.appendChild(li);
       });
-      nav.appendChild(li);
+
+      // Gắn sự kiện click
+      nav.querySelectorAll("a[data-cat]").forEach(link => {
+        link.addEventListener("click", e => {
+          e.preventDefault();
+          const catId = link.getAttribute("data-cat");
+          filterByCategory(catId);
+        });
+      });
     }
 
-    others.forEach(cat => {
-      const li = document.createElement("li");
-      li.className = "nav-item";
-      li.innerHTML = `<a class="nav-link text-white" href="#" data-cat="${cat.id}">${cat.name}</a>`;
-      nav.appendChild(li);
-    });
+    function filterByCategory(catId) {
+      const title = document.querySelector(".main-content h5");
 
-    // Gắn sự kiện click
-    nav.querySelectorAll("a[data-cat]").forEach(link => {
-      link.addEventListener("click", e => {
-        e.preventDefault();
-        const catId = link.getAttribute("data-cat");
-        filterByCategory(catId);
-      });
-    });
-  }
+      if (catId === "all") {
+        filteredProducts = allProducts;
+        title.textContent = "Tất cả sản phẩm";
+      } else {
+        const id = parseInt(catId);
+        filteredProducts = allProducts.filter(p => p.category_id === id);
+        title.textContent = "Sản phẩm: " + (categoriesMap[id] || "");
+      }
 
-  function filterByCategory(catId) {
-    const title = document.querySelector(".main-content h5");
-
-    if (catId === "all") {
-      filteredProducts = allProducts;
-      title.textContent = "Tất cả sản phẩm";
-    } else {
-      const id = parseInt(catId);
-      filteredProducts = allProducts.filter(p => p.category_id === id);
-      title.textContent = "Sản phẩm: " + (categoriesMap[id] || "");
+      currentPage = 1;
+      renderProducts();
+      renderPagination();
     }
 
-    currentPage = 1;
-    renderProducts();
-    renderPagination();
-  }
+    function formatPrice(price) {
+      if (!price) return "Giá liên hệ";
+      const val = parseInt(price);
+      if (isNaN(val)) return "Giá liên hệ";
+      return val < 400000 ? val.toLocaleString("vi-VN") + " đ" : "Giá liên hệ";
+    }
 
-  function formatPrice(price) {
-    if (!price) return "Giá liên hệ";
-    const val = parseInt(price);
-    if (isNaN(val)) return "Giá liên hệ";
-    return val < 400000 ? val.toLocaleString("vi-VN") + " đ" : "Giá liên hệ";
-  }
+    function renderProducts() {
+      const productGrid = document.getElementById("productGrid");
+      productGrid.innerHTML = "";
 
-  function renderProducts() {
-    const productGrid = document.getElementById("productGrid");
-    productGrid.innerHTML = "";
+      const start = (currentPage - 1) * itemsPerPage;
+      const end = start + itemsPerPage;
+      const pageProducts = filteredProducts.slice(start, end);
 
-    const start = (currentPage - 1) * itemsPerPage;
-    const end = start + itemsPerPage;
-    const pageProducts = filteredProducts.slice(start, end);
-
-    pageProducts.forEach(p => {
-      const col = document.createElement("div");
-      col.className = "col-sm-6 col-lg-4";
-      col.innerHTML = `
-        <div class="card h-100">
+      pageProducts.forEach(p => {
+        const col = document.createElement("div");
+        col.className = "col-sm-6 col-lg-4 d-flex justify-content-center mt-5";
+        col.innerHTML = `
+        <div class="card h-100" style="width: 90%;">
           <div>
             <img width="100%" height="250px" src="${p.image || 'https://via.placeholder.com/400x250'}" class="card-img-top" alt="${p.name}">
           </div>
           <div class="card-body">
             <h6 class="card-title">${p.name}</h6>
             <p class="text-muted mb-1">${categoriesMap[p.category_id] || ""}</p>
-            <p class="fw-bold text-primary">${formatPrice(p.price)}</p>
+            <p class="fw-bold text-danger">${formatPrice(p.price)}</p>
           </div>
         </div>
       `;
-      productGrid.appendChild(col);
-    });
-  }
-
-  function renderPagination() {
-    const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
-    const pagination = document.getElementById("pagination");
-    pagination.innerHTML = "";
-
-    for (let i = 1; i <= totalPages; i++) {
-      const li = document.createElement("li");
-      li.className = "page-item " + (i === currentPage ? "active" : "");
-      li.innerHTML = `<a class="page-link" href="#">${i}</a>`;
-      li.addEventListener("click", (e) => {
-        e.preventDefault();
-        currentPage = i;
-        renderProducts();
-        renderPagination();
+        productGrid.appendChild(col);
       });
-      pagination.appendChild(li);
     }
-  }
 
-  // Khởi chạy
-  loadData();
-</script>
+    function renderPagination() {
+      const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
+      const pagination = document.getElementById("pagination");
+      pagination.innerHTML = "";
+
+      for (let i = 1; i <= totalPages; i++) {
+        const li = document.createElement("li");
+        li.className = "page-item " + (i === currentPage ? "active" : "");
+        li.innerHTML = `<a class="page-link" href="#">${i}</a>`;
+        li.addEventListener("click", (e) => {
+          e.preventDefault();
+          currentPage = i;
+          renderProducts();
+          renderPagination();
+        });
+        pagination.appendChild(li);
+      }
+    }
+
+    // Khởi chạy
+    loadData();
+  </script>
 </body>
+
 </html>
