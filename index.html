@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Glow Gifts Layout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding-top: 180px;
+    }
+    header {
+      background: #fff;
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #007bff;
+    }
+    .slogan {
+      font-size: 14px;
+      color: #555;
+    }
+    .hotline {
+      font-weight: bold;
+      color: #007bff;
+    }
+    nav {
+      background: #007bff;
+    }
+    nav .nav-link {
+      color: white !important;
+      font-weight: bold;
+      padding: 10px 15px;
+      transition: all 0.3s ease;
+    }
+    nav .nav-link:hover {
+      background: deepskyblue;
+      border-radius: 6px;
+      transform: scale(1.05);
+    }
+    .sidebar {
+      border-right: 1px solid #ddd;
+      padding: 15px;
+    }
+    .list-group-item {
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .list-group-item:hover {
+      background: #e3f2fd;
+      color: #007bff;
+      transform: translateX(5px);
+    }
+    .main-content {
+      padding: 15px;
+    }
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    footer {
+      background: #f8f9fa;
+      padding: 30px 0;
+      margin-top: 30px;
+      border-top: 1px solid #ddd;
+    }
+    footer h5 {
+      color: #007bff;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    footer p, footer ul {
+      font-size: 14px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    footer ul li {
+      margin-bottom: 5px;
+    }
+    .pagination{
+        background-color: white;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header + Navigation cố định -->
+<div class="fixed-top shadow-sm">
+  <!-- Header -->
+  <header class="bg-white border-bottom">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap py-2">
+      <div>
+        <div class="logo d-flex align-items-center">
+          <img height="60" src="data/images/logo.png" alt="">
+        </div>
+        <div class="slogan">
+          <span style="color: #ff4081;">Quà tặng tinh tế</span> - 
+          <span style="color: #007bff;">Sáng tạo doanh nghiệp</span>
+        </div>
+      </div>
+      <div class="hotline mt-2 mt-md-0 fw-bold text-primary">
+        Hotline: 0909 xxx xxx
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg bg-primary">
+    <div class="container">
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        ☰
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="#">Trang chủ</a>
+          </li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Quà sinh nhật</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Quà giáng sinh</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Đồ trang trí</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Văn phòng phẩm</a></li>
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="moreMenu" role="button" data-bs-toggle="dropdown">
+              Xem thêm
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Quà tết</a></li>
+              <li><a class="dropdown-item" href="#">Quà cưới</a></li>
+              <li><a class="dropdown-item" href="#">Đồ handmade</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+
+  <!-- Main Content -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Sidebar -->
+      <!-- Giới thiệu doanh nghiệp -->
+<div class="col-lg-4 col-md-5 mb-4">
+  <div class="p-3 border rounded bg-light h-100">
+    <h5 class="fw-bold mb-3">Giới thiệu <span style="color: #ff4081;">GLOW</span> <span style="color: #007bff;">GIFTS</span></h5>
+    <img src="https://via.placeholder.com/350x200" class="img-fluid rounded mb-3" alt="Giới thiệu công ty">
+    <p style="text-align: justify;">
+      <span style="color: #ff4081;">GLOW</span> <span style="color: #007bff;">GIFTS</span> là thương hiệu chuyên cung cấp <b>văn phòng phẩm</b> và 
+      <b>quà tặng doanh nghiệp</b> với mẫu mã đa dạng, thiết kế tinh tế và chất lượng đảm bảo. 
+      Chúng tôi hiểu rằng mỗi món quà không chỉ đơn thuần là vật phẩm, mà còn là cầu nối gắn kết, 
+      truyền tải thông điệp và giá trị thương hiệu của doanh nghiệp đến đối tác, khách hàng và nhân viên.
+    </p>
+    <p style="text-align: justify;">
+      Tại GLOW GIFTS, bạn sẽ tìm thấy những sản phẩm văn phòng phẩm tiện ích, quà tặng sang trọng 
+      và giải pháp quà tặng trọn gói, phù hợp với nhiều dịp khác nhau như hội nghị, sự kiện, 
+      tri ân khách hàng hay khen thưởng nội bộ.
+    </p>
+    <p style="text-align: justify;">
+      Với phương châm <span class="fw-bold text-danger">“Trao quà – Gửi gắm niềm tin”</span>, 
+      GLOW GIFTS cam kết mang đến cho khách hàng sự hài lòng từ chất lượng sản phẩm 
+      đến dịch vụ chuyên nghiệp, góp phần tạo nên những mối quan hệ bền vững và giá trị lâu dài.
+    </p>
+  </div>
+</div>
+
+
+      <!-- Main content -->
+      <div class="col-lg-8 col-md-7 main-content">
+        <h5 style="font-weight: bold;">Tất cả sản phẩm</h5>
+        <div class="row g-3 mt-2" id="productGrid">
+          <!-- Sản phẩm sẽ render bằng JS -->
+        </div>
+        <nav>
+          <ul class="pagination justify-content-center mt-3" id="pagination">
+            <!-- Pagination render bằng JS -->
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-md-4 mb-3">
+          <h5>THÔNG TIN LIÊN HỆ</h5>
+          <p>
+            Công ty xxx - GLOW GIFTS<br>
+            69 Đ. Phạm Thận Duật, Phường Cát Lái, HCM<br>
+            Email: xxxxxxglowgifts@gmail.com<br>
+            SĐT: xxx | ZALO: xxx<br>
+            Fanpage: GLOW GIFTS
+          </p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Chính sách ưu đãi</h5>
+          <ul>
+            <li>Miễn phí giao hàng: đơn từ 599.000đ</li>
+            <li>Từ 299.000 - giảm 5%</li>
+            <li>Từ 599.000 - giảm 10%</li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Mã giảm giá & Khuyến mãi</h5>
+          <ul>
+            <li>CODE: GLOWGIFTS5 -5%</li>
+            <li>CODE: GLOWGIFTS10 -10%</li>
+            <li>CODE: GLOWGIFTS10DT -10% đơn đầu</li>
+            <li>Back-to-school: tặng hộp bút mini</li>
+            <li>Ngày Nhà giáo: tặng thiệp + bút đẹp</li>
+            <li>Giáng sinh / Tết: -15% + gói quà</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Data sản phẩm demo
+    const products = Array.from({length: 12}, (_, i) => ({
+      name: "Sản phẩm " + (i+1),
+      desc: "Mô tả sản phẩm " + (i+1),
+      img: "https://via.placeholder.com/400x250"
+    }));
+
+    const itemsPerPage = 8;
+    let currentPage = 1;
+
+    function renderProducts(page) {
+      const start = (page - 1) * itemsPerPage;
+      const end = start + itemsPerPage;
+      const productGrid = document.getElementById("productGrid");
+      productGrid.innerHTML = "";
+      products.slice(start, end).forEach(p => {
+        const col = document.createElement("div");
+        col.className = "col-sm-6";
+        col.innerHTML = `
+          <div class="card">
+            <img src="${p.img}" class="card-img-top" alt="${p.name}">
+            <div class="card-body">
+              <h6 class="card-title">${p.name}</h6>
+              <p class="card-text">${p.desc}</p>
+            </div>
+          </div>
+        `;
+        productGrid.appendChild(col);
+      });
+    }
+
+    function renderPagination() {
+      const totalPages = Math.ceil(products.length / itemsPerPage);
+      const pagination = document.getElementById("pagination");
+      pagination.innerHTML = "";
+      for (let i = 1; i <= totalPages; i++) {
+        const li = document.createElement("li");
+        li.className = "page-item " + (i === currentPage ? "active" : "");
+        li.innerHTML = `<a class="page-link" href="#">${i}</a>`;
+        li.addEventListener("click", (e) => {
+          e.preventDefault();
+          currentPage = i;
+          renderProducts(currentPage);
+          renderPagination();
+        });
+        pagination.appendChild(li);
+      }
+    }
+
+    // Khởi chạy ban đầu
+    renderProducts(currentPage);
+    renderPagination();
+  </script>
+</body>
+</html>

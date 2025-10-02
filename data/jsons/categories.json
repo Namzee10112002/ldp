@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Quà tặng doanh nghiệp cao cấp"
+    },
+    {
+        "id": 2,
+        "name": "Quà tặng doanh nghiệp cơ bản"
+    },
+    {
+        "id": 3,
+        "name": "Quà tặng gốm sứ"
+    },
+    {
+        "id": 4,
+        "name": "Quà tặng gia dụng"
+    },
+    {
+        "id": 5,
+        "name": "Quà tặng khuyến mại, sự kiện"
+    },
+    {
+        "id": 6,
+        "name": "Quà tặng công nghệ"
+    }
+]

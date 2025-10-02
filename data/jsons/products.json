@@ -1,0 +1,387 @@
+[
+    {
+        "id": 1,
+        "category_id": 1,
+        "image": "",
+        "name": "Tranh Bát Mã dát vàng 24k 34x27cm",
+        "price": "3500000"
+    },
+    {
+        "id": 2,
+        "category_id": 1,
+        "image": "",
+        "name": "Tranh Mã đáo thành công dát vàng 24k 20x20cm",
+        "price": ""
+    },
+    {
+        "id": 3,
+        "category_id": 1,
+        "image": "",
+        "name": "Tranh Phượng Hoàng mạ vàng 24k 24x35cm",
+        "price": "3775000"
+    },
+    {
+        "id": 4,
+        "category_id": 1,
+        "image": "",
+        "name": "Tranh Đôi Chim Hỷ Tước Mẫu Đơn dát vàng 24k 24x24cm",
+        "price": "2500000"
+    },
+    {
+        "id": 5,
+        "category_id": 1,
+        "image": "",
+        "name": "Bút bi Ngọc Trai Đen Tahiti mạ vàng trắng BLU-1997",
+        "price": "4999000"
+    },
+    {
+        "id": 6,
+        "category_id": 1,
+        "image": "",
+        "name": "Bút ký Ngọc Trai Xanh Bắc Úc Visionary",
+        "price": "3999000"
+    },
+    {
+        "id": 7,
+        "category_id": 1,
+        "image": "",
+        "name": "Quả cầu pha lê khắc 3D phong thủy QC004",
+        "price": "1190000"
+    },
+    {
+        "id": 8,
+        "category_id": 1,
+        "image": "",
+        "name": "Bộ cắm bút thuyền buồm pha lê",
+        "price": ""
+    },
+    {
+        "id": 9,
+        "category_id": 1,
+        "image": "",
+        "name": "Cặp da đại hội CD-006",
+        "price": ""
+    },
+    {
+        "id": 10,
+        "category_id": 2,
+        "image": "",
+        "name": "Bình giữ nhiệt thể thao BGN31",
+        "price": "269000"
+    },
+    {
+        "id": 11,
+        "category_id": 2,
+        "image": "",
+        "name": "Bình giữ nhiệt thời trang BGN40",
+        "price": "129000"
+    },
+    {
+        "id": 12,
+        "category_id": 2,
+        "image": "",
+        "name": "Sổ da Hải Tiến Vision V8",
+        "price": "40000"
+    },
+    {
+        "id": 13,
+        "category_id": 2,
+        "image": "",
+        "name": "Sổ da Summit 5 khuy",
+        "price": "36000"
+    },
+    {
+        "id": 14,
+        "category_id": 2,
+        "image": "",
+        "name": "Sổ da Memo 6",
+        "price": "28000"
+    },
+    {
+        "id": 15,
+        "category_id": 2,
+        "image": "",
+        "name": "Sổ da Vista 8 khuy",
+        "price": "53000"
+    },
+    {
+        "id": 16,
+        "category_id": 2,
+        "image": "",
+        "name": "Bút ký Pentel B811A-C",
+        "price": "330000"
+    },
+    {
+        "id": 17,
+        "category_id": 2,
+        "image": "",
+        "name": "Bút ký Pentel BL407A-C",
+        "price": "209000"
+    },
+    {
+        "id": 18,
+        "category_id": 2,
+        "image": "",
+        "name": "Bút ký Pentel BL407X-C mạ vàng",
+        "price": "219000"
+    },
+    {
+        "id": 19,
+        "category_id": 3,
+        "image": "",
+        "name": "Set quà CTG351 (Trà, mật ong, bánh, hạt)",
+        "price": "579000"
+    },
+    {
+        "id": 20,
+        "category_id": 3,
+        "image": "",
+        "name": "Set quà CTG302 (Hạt + 3 trà)",
+        "price": "549000"
+    },
+    {
+        "id": 21,
+        "category_id": 3,
+        "image": "",
+        "name": "Set quà CTG309 (Mật ong + trà)",
+        "price": "340000"
+    },
+    {
+        "id": 22,
+        "category_id": 3,
+        "image": "",
+        "name": "Bộ lọ gốm VS370",
+        "price": "1345000"
+    },
+    {
+        "id": 23,
+        "category_id": 3,
+        "image": "",
+        "name": "Lọ gốm quai đỏ VS102",
+        "price": "1235000"
+    },
+    {
+        "id": 24,
+        "category_id": 3,
+        "image": "",
+        "name": "Set lọ hoa vẽ tay VS355",
+        "price": "1525000-1875000"
+    },
+    {
+        "id": 25,
+        "category_id": 3,
+        "image": "",
+        "name": "Lọ hoa trừu tượng VS351",
+        "price": "1325000"
+    },
+    {
+        "id": 26,
+        "category_id": 3,
+        "image": "",
+        "name": "Bình trà Camellia chỉ vàng",
+        "price": "351000-520560"
+    },
+    {
+        "id": 27,
+        "category_id": 3,
+        "image": "",
+        "name": "Bình trà Camellia Hương Biển",
+        "price": "940680-1071360"
+    },
+    {
+        "id": 28,
+        "category_id": 3,
+        "image": "",
+        "name": "Bộ trà Jasmine Quả đầu mùa",
+        "price": "1036800"
+    },
+    {
+        "id": 29,
+        "category_id": 3,
+        "image": "",
+        "name": "Ly vát trắng dáng thấp",
+        "price": "35000"
+    },
+    {
+        "id": 30,
+        "category_id": 3,
+        "image": "",
+        "name": "Ly bầu quai C trắng",
+        "price": "30000"
+    },
+    {
+        "id": 31,
+        "category_id": 3,
+        "image": "",
+        "name": "Bình hút lộc Thuận buồm xuôi gió",
+        "price": "520000-5600000"
+    },
+    {
+        "id": 32,
+        "category_id": 3,
+        "image": "",
+        "name": "Bộ ấm trà cao cấp Bát Tràng",
+        "price": "660000"
+    },
+    {
+        "id": 33,
+        "category_id": 4,
+        "image": "",
+        "name": "Đồng hồ nghệ thuật JT2183-36",
+        "price": "760000"
+    },
+    {
+        "id": 34,
+        "category_id": 4,
+        "image": "",
+        "name": "Đồng hồ nghệ thuật SN011",
+        "price": "1030000"
+    },
+    {
+        "id": 35,
+        "category_id": 4,
+        "image": "",
+        "name": "Bộ bình + 4 ly thủy tinh Modeni",
+        "price": "790000"
+    },
+    {
+        "id": 36,
+        "category_id": 5,
+        "image": "",
+        "name": "Áo đồng phục Polo",
+        "price": ""
+    },
+    {
+        "id": 37,
+        "category_id": 5,
+        "image": "",
+        "name": "Áo mưa cánh dơi vải dù",
+        "price": "75000"
+    },
+    {
+        "id": 38,
+        "category_id": 5,
+        "image": "",
+        "name": "Ô dù Kachi MK416",
+        "price": "299000"
+    },
+    {
+        "id": 39,
+        "category_id": 5,
+        "image": "",
+        "name": "Mũ bảo hiểm Kingston",
+        "price": "99000"
+    },
+    {
+        "id": 40,
+        "category_id": 5,
+        "image": "",
+        "name": "Túi vải canvas T2401",
+        "price": "100000"
+    },
+    {
+        "id": 41,
+        "category_id": 5,
+        "image": "",
+        "name": "Kệ mica để bàn",
+        "price": "95000"
+    },
+    {
+        "id": 42,
+        "category_id": 5,
+        "image": "",
+        "name": "Bút bi Parker Jotter",
+        "price": "190000"
+    },
+    {
+        "id": 43,
+        "category_id": 5,
+        "image": "",
+        "name": "Bút bi Thiên Long TL-089",
+        "price": "3500"
+    },
+    {
+        "id": 44,
+        "category_id": 5,
+        "image": "",
+        "name": "Balo laptop BL77",
+        "price": "208050"
+    },
+    {
+        "id": 45,
+        "category_id": 5,
+        "image": "",
+        "name": "Balo quảng cáo",
+        "price": ""
+    },
+    {
+        "id": 46,
+        "category_id": 5,
+        "image": "",
+        "name": "Combo cà vạt, khăn, kẹp CB3022",
+        "price": "294000"
+    },
+    {
+        "id": 47,
+        "category_id": 6,
+        "image": "",
+        "name": "Pin sạc dự phòng Yoobao Q22 20000mAh",
+        "price": "480000"
+    },
+    {
+        "id": 48,
+        "category_id": 6,
+        "image": "",
+        "name": "Loa Bluetooth Tronsmart T7 Mini",
+        "price": "559000"
+    },
+    {
+        "id": 49,
+        "category_id": 6,
+        "image": "",
+        "name": "Loa Bluetooth Tronsmart T6 Mini",
+        "price": "459000"
+    },
+    {
+        "id": 50,
+        "category_id": 6,
+        "image": "",
+        "name": "USB 3.0 Sandisk CZ73 32GB",
+        "price": "149000"
+    },
+    {
+        "id": 51,
+        "category_id": 6,
+        "image": "",
+        "name": "USB Sandisk CZ600 32GB",
+        "price": "139000"
+    },
+    {
+        "id": 52,
+        "category_id": 6,
+        "image": "",
+        "name": "Vòng đeo tay Mi Band 9 Active",
+        "price": "540000"
+    },
+    {
+        "id": 53,
+        "category_id": 6,
+        "image": "",
+        "name": "Bộ sạc nhanh Veggieg V-M102 PD20W",
+        "price": "195000"
+    },
+    {
+        "id": 54,
+        "category_id": 6,
+        "image": "",
+        "name": "Cân điện tử WH-B20",
+        "price": "550000"
+    },
+    {
+        "id": 55,
+        "category_id": 6,
+        "image": "",
+        "name": "Đèn học LED Wilit U13AQ",
+        "price": "1050000"
+    }
+]
